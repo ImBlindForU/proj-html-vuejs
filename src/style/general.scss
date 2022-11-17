@@ -1,0 +1,24 @@
+// reset
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// commons
+
+.container-fluid{
+    width: 100%;
+
+    // reset
+
+    background-color: red;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: green ;
+}
