@@ -8,17 +8,47 @@
 
 
 // commons
-
+// containers
 .container-fluid{
     width: 100%;
 
-    // reset
 
-    background-color: red;
 }
 
 .container{
     width: 80%;
     margin: 0 auto;
-    background-color: green ;
+
+}
+
+// flex
+.flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+// position
+.relative{
+    position: relative;
+}
+
+// list
+
+ul{
+    li{
+        list-style: none;
+    }
+}
+
+// link
+
+a{
+    text-decoration: none;
+
+    // reset
+    color: black;
 }
