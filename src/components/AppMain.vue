@@ -41,7 +41,7 @@ export default{
                         </h2> 
                     </div>
                     <div class="text-about-me">
-                        <h4>Want to learn hot to be <span>an alpha male</span>?How to be more masculine?How to be the man you've always wanted to be?</h4>
+                        <h4>Want to learn hot to be <span class="text-colored">an alpha male</span>?How to be more masculine?How to be the man you've always wanted to be?</h4>
                         <p>Your goal is to show the consistency of buisness,care values, and customer care.Punctually,responsability,individuality,accuracy,entusiasm - you have to clearly explain how these qualities are applicable to your work.And the important thing is you do love what do you do</p>
                     </div>  
                 </div>
@@ -63,8 +63,17 @@ export default{
         </section>
         <!-- latest course -->
         <section>
-            <div class="container">
-                <!-- card dinamic -->
+            <div class="container mt ">
+                <div class="text-course">
+                    <h4>BEGIN YOUR JOURNEY AT MAXCOACH</h4>
+                    <h2>Latest <span class="text-colored">Online Courses</span></h2>
+                    <div class="row-cards">
+                        <!-- card -->
+                    </div>
+                    <button >View all courses </button>
+                </div>
+                
+              
             </div>
         </section>
     </div>
@@ -109,9 +118,7 @@ h3{
     h4{
         font-size: 1.5rem;
         padding: 1rem;
-        span{
-            color: #20AD96;
-        }
+      
     }
     p{
         padding: 1rem;
@@ -154,4 +161,13 @@ h3{
     }
 }
 
+
+// card section
+.text-course{
+    text-align: center;
+    h2{
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+}
 </style>
