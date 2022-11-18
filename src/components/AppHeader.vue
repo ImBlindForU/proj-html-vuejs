@@ -121,6 +121,8 @@ export default{
         width: 2rem;
         height: 2rem;
         border: 1px solid black;
+        text-align: center;
+        vertical-align: middle;
     }
 }
 </style>
