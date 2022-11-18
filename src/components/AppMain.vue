@@ -10,19 +10,19 @@ export default{
         <section>
             <div class="container mt flex space-between" >
                 <div class="data-container">  
-                        <h2>1.926</h2>
+                        <h2 class="text-colored">1.926</h2>
                         <h3>FINISHED SESSIONS</h3>
                 </div>
                 <div class="data-container">  
-                        <h2>100%</h2>
+                        <h2 class="text-colored">100%</h2>
                         <h3>SATISFACTION RATE</h3>
                 </div>
                 <div class="data-container">  
-                        <h2>3092+</h2>
+                        <h2 class="text-colored">3092+</h2>
                         <h3>ENROLLED LEARNERS</h3>
                 </div>
                 <div class="data-container">  
-                        <h2>200</h2>
+                        <h2 class="text-colored">200</h2>
                         <h3>ONLINE INSTRUCTORS</h3>
                 </div>
             </div>
@@ -72,10 +72,81 @@ export default{
                     </div>
                     <button >View all courses </button>
                 </div>
-                
-              
             </div>
         </section>
+
+        <!-- book section -->
+        <section>
+            <div class="container mt flex">
+                <div class="book-store-text">
+                    <h4>BOOK STORE ONLINE</h4>
+                    <h2>Be Alpha With <span class="text-colored">Wingman's Book</span></h2>
+                    <ul>
+                        <li>Help you understand yourself better</li>
+                        <li>Revealing mature tips</li>
+                        <li>Give the right advice</li>
+                        <li>Fascinating exeples of alpha man</li>
+                    </ul>
+                    <button>Get Free Ebook</button>
+                </div>
+                <div class="books flex">
+                    <div class="book">
+                        <img src="../assets/img/product-book-11-400x400.jpg" alt="">
+                        <div class="text-book">
+                            <h2>Alpha man by Maxcoach</h2>
+                            <h2 class="text-colored"> $29<span class="small">.00</span> </h2>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="../assets/img/product-book-10-400x400.jpg" alt="">
+                        <div class="text-book">
+                            <h2>Real man 4.0 by Maccoach</h2>
+                            <h2 class="text-colored">$39<span class="small">.00</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sponsor -->
+        <section>
+            <div class="container mt">
+                <div class="sponsors flex space-between">
+                    <div class="sponsor">
+                        <img src="../assets/img/client-logo-05-primary.png" alt="">
+                    </div>
+                    <div class="sponsor">
+                        <img src="../assets/img/client-logo-06-primary.png" alt="">
+                    </div>
+                    <div class="sponsor">
+                        <img src="../assets/img/client-logo-07-primary.png" alt="">
+                    </div>
+                    <div class="sponsor">
+                        <img src="../assets/img/client-logo-04-primary.png" alt="">
+                    </div>
+                    <div class="sponsor">
+                        <img src="../assets/img/client-logo-03-primary.png" alt="">
+                    </div>
+                    <div class="sponsor">
+                        <img src="../assets/img/client-logo-02-primary.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- recensioni -->
+    <div class="container-fluid mt reviews">
+        <div class="text-revieww">
+            <!-- rewis slider -->a
+        </div>
+    </div>
+
+    <!-- blog udate -->
+    <div class="container-fluid mt">
+        <div class="container">
+
+        </div>
     </div>
 </template>
 
@@ -87,7 +158,7 @@ export default{
 
     padding-left: 3rem;
     h2{
-        color: #20AD96;
+       
         text-align: center;
         font-size: 3rem;
         padding: 1rem;
@@ -170,4 +241,45 @@ h3{
         padding-top: 1rem;
     }
 }
+
+// book store
+
+.book-store-text{
+    width: 50%;
+    h2{
+        font-size: 3rem;
+    }
+    ul {
+        li{
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+    button{
+        margin-top: 1rem;
+    }
+}
+
+.book{
+    text-align: center;
+    img{
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+    h2{
+        padding-top: 1rem;
+        .small{
+            font-size: 1rem;
+        }
+    }
+    
+}
+
+// sponsor
+
+.sponsor{
+    filter: grayscale(100%);
+    opacity: 0.3;
+}
+
 </style>
