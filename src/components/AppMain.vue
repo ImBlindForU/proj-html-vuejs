@@ -1,6 +1,97 @@
 <script >
+import cardCourse from "./cardCourse.vue"
 export default{
-    name:"AppMain"
+    name:"AppMain",
+    components:{
+        cardCourse,
+    },
+    data(){
+        return{
+            cards:[
+                {
+               
+                    "image":"src/assets/img/motivation-course-06-480x298.jpg",
+                    "price":"$20",
+                    "cent":".00",
+                    "title":"How to be Successful:Create A Growth Mindset For Success",
+                    "lessons":"3 Lesson",
+                    "students":"50 Students"
+                },
+                {
+
+                    "image":"src/assets/img/motivation-course-05-480x298.jpg",
+                    "price":"$30",
+                    "cent":".00",
+                    "title":"How to Build Confidance in Your Abilities",
+                    "lessons":"1 Lesson",
+                    "students":"50 Students"
+                },
+                {
+
+                    "image":"src/assets/img/motivation-course-04-480x298.jpg",
+                    "price":"$20",
+                    "cent":".00",
+                    "title":"Productivity Machine - focus in a Distracted World",
+                    "lessons":"5 Lesson",
+                    "students":"50 Students"
+                },
+                {
+               
+                    "image":"src/assets/img/motivation-course-03-480x298.jpg",
+                    "price":"$20",
+                    "cent":".00",
+                    "title":"Effective Time Managemente Mastery - Complete Guide",
+                    "lessons":"18 Lesson",
+                    "students":"50 Students"
+                },
+                {
+
+                    "image":"src/assets/img/motivation-course-02-480x298.jpg",
+                    "price":"$25",
+                    "cent":".99",
+                    "title":"Body Language Secrets for Entrepreneurs",
+                    "lessons":"19 Lesson",
+                    "students":"50 Students"
+                 },
+                {
+
+                    "image":"src/assets/img/motivation-course-01-480x298.jpg",
+                    "price":"$19",
+                    "cent":".99",
+                    "title":"Management Sills: The Science of Leadership",
+                    "lessons":"17 Lesson",
+                    "students":"50 Students"
+                }
+            ],
+            newses:[
+                {
+                    "img":"src/assets/img/motivation-blog-04-480x325.jpg",
+                    "date":"May 13,2020",
+                    "newsTitle":"How to Stay True To Your Personal Brand",
+                    "newsText":"When it comes to your buismess or career,you want..."
+                },
+                {
+                    "img":"src/assets/img/motivation-blog-03-480x325.jpg",
+                    "date":"May 13,2020",
+                    "newsTitle":"How to Stay True To Your Personal Brand",
+                    "newsText":"When it comes to your buismess or career,you want..."
+                },
+                {
+                    "img":"src/assets/img/motivation-blog-02-480x325.jpg",
+                    "date":"May 13,2020",
+                    "newsTitle":"How to Stay True To Your Personal Brand",
+                    "newsText":"When it comes to your buismess or career,you want..."
+                },
+                {
+                    "img":"src/assets/img/motivation-blog-01-480x325.jpg",
+                    "date":"May 13,2020",
+                    "newsTitle":"How to Stay True To Your Personal Brand",
+                    "newsText":"When it comes to your buismess or career,you want..."
+                },
+                
+            ]
+        }
+    }
 }
 </script>
 
@@ -67,8 +158,15 @@ export default{
                 <div class="text-course">
                     <h4>BEGIN YOUR JOURNEY AT MAXCOACH</h4>
                     <h2>Latest <span class="text-colored">Online Courses</span></h2>
-                    <div class="row-cards">
-                        <!-- card -->
+                    <div class="row-cards flex wrap">
+                        <cardCourse v-for="(card, index) in cards" :key="index"
+                                    :image="card.image"
+                                    :price="card.price"
+                                    :cent="card.cent"
+                                    :title="card.title"
+                                    :lessons="card.lessons"
+                                    :students="card.students" />
+                                     
                     </div>
                     <button >View all courses </button>
                 </div>
@@ -145,7 +243,13 @@ export default{
     <!-- blog udate -->
     <div class="container-fluid mt">
         <div class="container">
-
+            <h4>BLOG UPDATE</h4>
+            <h2>Interesting <span class="text-colored">articles udated</span> daily</h2>
+            <div class="newses-list">
+                <div class="news">
+                    
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -245,8 +349,9 @@ h3{
 // book store
 
 .book-store-text{
-    width: 50%;
+    width: 40%;
     h2{
+        width: 60%;
         font-size: 3rem;
     }
     ul {
@@ -268,9 +373,7 @@ h3{
     }
     h2{
         padding-top: 1rem;
-        .small{
-            font-size: 1rem;
-        }
+        
     }
     
 }
