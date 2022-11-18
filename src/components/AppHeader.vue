@@ -78,19 +78,16 @@ export default{
     flex-direction: column;
     justify-content: center;
     h2{
-        width: 70%;
         font-size: 2rem;
         padding-bottom: 1rem;
     }
     h1{
-        width: 70%;
 
         font-size: 4rem;
         padding-bottom: 1rem;
 
     }
     p{
-        width: 70%;
         font-size: 1.5rem;
         padding-bottom: 1rem;
 
