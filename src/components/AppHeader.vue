@@ -74,7 +74,6 @@ export default{
     background-image: url(../assets/img/background-pattern-wavify.png);
 }
 .jumbo-text{
-    color: red;
     width: 40%;
     flex-direction: column;
     justify-content: center;
