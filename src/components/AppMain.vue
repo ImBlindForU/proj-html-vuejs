@@ -10,6 +10,7 @@ export default{
     },
     data(){
         return{
+
             cards:[
                 {
                
@@ -92,7 +93,8 @@ export default{
                     "newsText":"When it comes to your buismess or career,you want..."
                 },
                 
-            ]
+            ],
+
         }
     }
 }
@@ -171,7 +173,7 @@ export default{
                                     :students="card.students" />
                                      
                     </div>
-                    <button >View all courses </button>
+                    <button ><a href="">View all courses</a>  </button>
                 </div>
             </div>
         </section>
@@ -188,7 +190,7 @@ export default{
                         <li>Give the right advice</li>
                         <li>Fascinating exeples of alpha man</li>
                     </ul>
-                    <button>Get Free Ebook</button>
+                    <button><a href="">Get Free Ebook</a> </button>
                 </div>
                 <div class="books flex">
                     <div class="book">

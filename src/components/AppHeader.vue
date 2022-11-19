@@ -4,10 +4,16 @@ export default{
     name:"AppHeader",
     data(){
         return{
-            navbarItems:[
-               
-            ]
-        }
+            headerLinks:{
+                    home: "Home",
+                    pages:"Pages",
+                    course:"Course",
+                    features:"Features",
+                    blog:"Blog",
+                    shop:"Shop"
+            }
+  
+        }  
     }
 }
 </script>
@@ -19,16 +25,10 @@ export default{
         <div class="container flex space-between header-heigt">
             <div class="logo">
                 <img src="../assets/img/dark-logo.png" alt="">
-                logo
             </div>
             <div class="list-general ">
                 <ul class="flex space-between">
-                    <li><a href="">Home</a> </li>
-                    <li><a href="">Home</a> </li>
-                    <li><a href="">Home</a> </li>
-                    <li><a href="">Home</a> </li>
-                    <li><a href="">Home</a> </li>
-                    <li><a href="">Home</a> </li>
+                    <li  v-for="(headerLink, index) in headerLinks" :key="index"><a href="">{{headerLink}}</a> </li>
                 </ul>
             </div>
             <div class="icons">
@@ -55,7 +55,7 @@ export default{
                 <h2>I'M WINGMAN</h2>
                 <h1>Peace On Earth A Wonderful Wish But No Way</h1>
                 <p>Success isn't overnight. it's when everyday you get a little better than the day before. It all adds up</p>
-                <button>Get Started For Free  arrowleft</button>
+                <button><a href=""> Get Started For Free  arrowleft</a></button>
             </div>
             <div class="jumbo-img">
                 <img src="../assets/img/home-movation-hero-image.png" alt="">
@@ -72,6 +72,15 @@ export default{
 }
 .backgroundimg{
     background-image: url(../assets/img/background-pattern-wavify.png);
+}
+
+.list-general{
+    ul{
+        li{
+            padding: 2rem;
+            margin: 1rem;
+        }
+    }
 }
 .jumbo-text{
     width: 40%;
