@@ -1,9 +1,12 @@
 <script >
 import cardCourse from "./cardCourse.vue"
+import newsApp from "./newsApp.vue"
+
 export default{
     name:"AppMain",
     components:{
         cardCourse,
+        newsApp,
     },
     data(){
         return{
@@ -245,10 +248,12 @@ export default{
         <div class="container">
             <h4>BLOG UPDATE</h4>
             <h2>Interesting <span class="text-colored">articles udated</span> daily</h2>
-            <div class="newses-list">
-                <div class="news">
-                    
-                </div>
+            <div class="newses-list flex wrap spac-between">
+                <newsApp v-for="(news, index) in newses" :key="index"
+                :img="news.img"
+                :date="news.date"
+                :newsText="news.newsText"
+                :newsTitle="news.newsTitle" />
             </div>
         </div>
     </div>
