@@ -7,7 +7,7 @@ export default{
 <template>
     <!-- header top -->
     <div class="container-fluid black mt pt">
-        <div class="container flex space-between">
+        <div class="container flex ">
             <!-- adress -->
             <div class="address list">
                 <h4>Address</h4>
@@ -67,6 +67,12 @@ export default{
 .black{
     background-color: #171621;
     min-height: 150px;
+}
+.address{
+    width: 50%;
+}
+.explore{
+    width: 50%;
 }
 .list{
     h4{

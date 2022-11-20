@@ -1,12 +1,14 @@
 <script >
 import cardCourse from "./cardCourse.vue"
 import newsApp from "./newsApp.vue"
+import sliderApp from "./sliderApp.vue"
 
 export default{
     name:"AppMain",
     components:{
         cardCourse,
         newsApp,
+        sliderApp,
     },
     data(){
         return{
@@ -239,10 +241,9 @@ export default{
     </div>
 
     <!-- recensioni -->
-    <div class="container-fluid mt reviews">
-        <div class="text-revieww">
-            <!-- rewis slider -->a
-        </div>
+    <div class="container-fluid mt reviews flex relative">
+            <!-- rewis slider -->
+               <sliderApp />
     </div>
 
     <!-- blog udate -->
