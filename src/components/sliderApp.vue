@@ -15,22 +15,25 @@ export default{
 </script>
 
 <template>
-    <div class="slider flex">
-        <span  @click="$emit('parentUp')"><i class="fa-solid fa-caret-up"></i> </span>
-        <span> /4</span>
-        <span @click="$emit('parentDown')"><i  class="fa-solid fa-caret-down"></i></span>
+    <div class="slide flex">
+        <div class="slider flex">
+            <span  @click="$emit('parentUp')"><i class="fa-solid fa-caret-up"></i> </span>
+            <span> /4</span>
+            <span @click="$emit('parentDown')"><i  class="fa-solid fa-caret-down"></i></span>
+        </div>
+        <div class="text-slider flex ">
+            <h4 class="text-colored">REAL STORIES</h4>
+            <p>{{testimonialWords}}
+            </p>
+            <img :src="testimonialImg" alt="">
+            <h2>{{testimonialName}}</h2>
+            <span>{{testimonialWork}}</span>
+        </div>
+        <div class="img-slider">
+            <img src="../assets/img/home-movation-testimonial-image.jpg" alt="">
+        </div>
     </div>
-    <div class="text-slider flex ">
-        <h4 class="text-colored">REAL STORIES</h4>
-        <p>{{testimonialWords}}
-        </p>
-        <img src="testimonialImg" alt="">
-        <h2>{{testimonialName}}</h2>
-        <span>{{testimonialWork}}</span>
-    </div>
-    <div class="img-slider">
-        <img src="../assets/img/home-movation-testimonial-image.jpg" alt="">
-    </div>
+   
 </template>
 
 <style lang="scss" >
