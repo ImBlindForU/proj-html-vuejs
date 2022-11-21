@@ -11,7 +11,11 @@ export default{
                     features:"Features",
                     blog:"Blog",
                     shop:"Shop"
-            }
+            },
+            icons:[
+                
+            ]
+            
   
         }  
     }
@@ -32,7 +36,9 @@ export default{
                 </ul>
             </div>
             <div class="icons">
-                icons
+                <ul>
+                    <li></li>
+                </ul>
             </div>
         </div>
         <!-- jumbotron -->
@@ -79,6 +85,11 @@ export default{
         li{
             padding: 2rem;
             margin: 1rem;
+            a{
+                color: #46416A;
+                font-weight: 700;
+            }   
+            
         }
     }
 }
