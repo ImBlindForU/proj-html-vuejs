@@ -252,34 +252,50 @@ export default{
                     <button><a href="">Get Free Ebook</a> </button>
                 </div>
                 <div class="books flex">
-                    <div class="book">
+                    <div class="book relative">
                         <img src="../assets/img/product-book-11-400x400.jpg" alt="">
                         <div class="text-book">
                             <h2>Alpha man by Maxcoach</h2>
                             <h2 class="text-colored"> $29<span class="small">.00</span> </h2>
                         </div>
-                        <div>
+                        <div class="hover-list">
                             <ul>
                                 <li>
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                   <span class="opacity">Click view</span> <i class=" opacity fa-solid fa-magnifying-glass"></i>
                                 </li>
                                 <li>
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="opacity">shop</span><i class=" opacity fa-solid fa-cart-shopping"></i>
                                 </li>
                                 <li>
-                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="opacity">Add to whishlist</span><i class="opacity fa-regular fa-heart"></i>
                                 </li>
                                 <li>
-                                    <i class="fa-solid fa-signal"></i>
+                                     <span class="opacity">Compare</span><i class="opacity fa-solid fa-signal"></i>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="book">
+                    <div class="book relative">
                         <img src="../assets/img/product-book-10-400x400.jpg" alt="">
                         <div class="text-book">
                             <h2>Real man 4.0 by Maccoach</h2>
                             <h2 class="text-colored">$39<span class="small">.00</span></h2>
+                        </div>
+                        <div class="hover-list">
+                            <ul>
+                                <li>
+                                   <span class="opacity">Click view</span> <i class=" opacity fa-solid fa-magnifying-glass"></i>
+                                </li>
+                                <li>
+                                    <span class="opacity">shop</span><i class=" opacity fa-solid fa-cart-shopping"></i>
+                                </li>
+                                <li>
+                                    <span class="opacity">Add to whishlist</span><i class="opacity fa-regular fa-heart"></i>
+                                </li>
+                                <li>
+                                     <span class="opacity">Compare</span><i class="opacity fa-solid fa-signal"></i>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -326,7 +342,7 @@ export default{
     </div>
 
     <!-- blog udate -->
-    <div class="container-fluid mt">
+    <div class="container-fluid mt relative">
         <div class="container">
             <h4>BLOG UPDATE</h4>
             <h2>Interesting <span class="text-colored">articles udated</span> daily</h2>
@@ -337,6 +353,9 @@ export default{
                 :newsText="news.newsText"
                 :newsTitle="news.newsTitle"
                  />
+                 <span class="view-all">
+                    VIEW ALL POSTS
+                </span>
             </div>
         </div>
     </div>
@@ -347,7 +366,7 @@ export default{
 .data-container{
     background-image: url(../assets/img/background-pattern-grid-line-06.png);
     background-position: left;
-
+    background-repeat: no-repeat;
     padding-left: 3rem;
     h2{
        
@@ -418,9 +437,13 @@ h3{
     }
     h2{
         padding-top: 1rem;
+        color: rgb(87, 0, 87);
     }
     h4{
         padding-top: 1rem;
+        color: rgb(87, 0, 87);
+
+
     }
 }
 
@@ -435,7 +458,26 @@ h3{
 }
 
 // book store
-
+.hover-list{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    ul{
+        li{
+           text-align: end;
+            i{
+                background-color: white;
+                border-radius: 50%;
+                font-size: 1.5rem;
+                padding: 1rem;
+                &:hover{
+                    
+                    background-color: #20AD96;
+                }
+            }
+        }
+    }
+}
 .book-store-text{
     width: 40%;
     h2{
@@ -444,8 +486,14 @@ h3{
     }
     ul {
         li{
+           
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
+            i{
+                padding-right: 1rem;
+                color: #20AD96;
+                font-size: 1rem;
+            }
         }
     }
     button{
@@ -454,10 +502,12 @@ h3{
 }
 
 .book{
+    
     text-align: center;
     img{
         padding-right: 2rem;
         padding-top: 2rem;
+       
     }
     h2{
         padding-top: 1rem;
@@ -469,8 +519,20 @@ h3{
 // sponsor
 
 .sponsor{
-    filter: grayscale(100%);
+    color: #20AD96;
+    filter: grayscale(90%);
     opacity: 0.3;
 }
+
+// blog
+.view-all{
+        margin-left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+        color: #20AD96;
+        margin-top: 3rem;
+        border-bottom: 1px solid #20AD96;
+
+    }
 
 </style>

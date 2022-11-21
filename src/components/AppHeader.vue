@@ -33,8 +33,8 @@ export default{
                     <li  v-for="(headerLink, index) in headerLinks" :key="index"><a href="">{{headerLink}}<i class="fa-solid fa-angle-down"></i></a> </li>
                 </ul>
             </div>
-            <div class="icons">
-                <ul>
+            <div class="icons ">
+                <ul class="flex">
                     <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
@@ -44,7 +44,7 @@ export default{
         </div>
         <!-- jumbotron -->
         <div class="container flex relative">
-            <div class="mini-menubar ">
+            <!-- <div class="mini-menubar ">
                <div class="tool">
                     a
                </div>
@@ -57,7 +57,7 @@ export default{
                <div class="tool">
                     d
                </div>
-            </div>
+            </div> -->
             <div class="jumbo-text flex">
                 <h2>I'M WINGMAN</h2>
                 <h1>Peace On Earth A Wonderful Wish But No Way</h1>
@@ -84,13 +84,33 @@ export default{
 .list-general{
     ul{
         li{
-            padding: 2rem;
+            padding: 1rem;
             margin: 1rem;
+           
             a{
                 color: #46416A;
                 font-weight: 700;
+                &:hover{
+                color:#20AD96;
+            }
+                i{
+                    padding-left: 0.5rem;
+                   }
             }   
             
+        }
+    }
+}
+
+.icons{
+    ul{
+        li{
+            i{
+                padding: 1rem;
+                &:hover{
+                    color:#20AD96;
+                    }
+            }
         }
     }
 }

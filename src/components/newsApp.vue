@@ -20,14 +20,29 @@ export default{
         <h4>{{newsTitle}}</h4>
         <p>{{newsText}}</p>
     </div>
+    
  </div>
 </template>
 
 <style lang="scss" >
 .news{
     width: calc(100% / 4 - 2rem );
-    margin: 1rem;
-    
+    margin-right: 2rem;
+    margin-top: 1rem;
+
+    .text-news{
+        p{
+            padding-top: 1rem;
+            i{
+                padding-right: 0.5rem;
+            }
+        }
+        h4{
+            padding-top: 1rem;
+        }
+
+    }
+   
 }
 
 </style>

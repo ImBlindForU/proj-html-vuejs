@@ -43,6 +43,7 @@ export default{
         
         .medium{
             font-size: 2rem;
+            font-weight: 1000;
             padding: 1rem;
         }
         h3{
