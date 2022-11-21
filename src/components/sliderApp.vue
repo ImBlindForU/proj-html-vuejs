@@ -34,7 +34,8 @@ export default{
     padding: 1rem;
     line-height: 1rem;
     border-radius: 50%;
-    z-index: 999;
+    width: 50px;
+    height: 50px;
 }
 .text-slider{
     background-image: url(../assets/img/background-pattern-wavify.png);
