@@ -4,7 +4,11 @@
 export default{
     name:"sliderApp",
     props:{
-       
+        testimonialWords: String,
+        testimonialImg: String,
+        testimonialName: String,
+        testimonialWork: String,
+        active: String,
     }
 }
 </script>
@@ -13,11 +17,11 @@ export default{
     <span class="slider">slider</span>
     <div class="text-slider flex ">
         <h4 class="text-colored">REAL STORIES</h4>
-        <p>I am free to learn a t my own pace, follow my own schedule and choose the subjecxt i want to learn from the syllabus. Great study portal for people like me. 
+        <p>{{testimonialWords}}
         </p>
-        <img src="../assets/img/testimonial-avata-02.jpg" alt="">
-        <h2>Mina Hollace</h2>
-        <span>/Freelancer</span>
+        <img src="testimonialImg" alt="">
+        <h2>{{testimonialName}}</h2>
+        <span>{{testimonialWork}}</span>
     </div>
     <div class="img-slider">
         <img src="../assets/img/home-movation-testimonial-image.jpg" alt="">

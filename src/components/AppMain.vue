@@ -96,7 +96,43 @@ export default{
                 },
                 
             ],
+            testimonials:[
+                {
+                    "testimonialWords":"I need to get certification for English proficency and MaxCoach is my best pchoice.Their tutors are smart and professional when dealing with students",
+                    "testimonialImg":"src/assets/img/testimonial-avata-04.jpg",
+                    "testimonialName":"Madley Pondor",
+                    "testimonialWork":"/IT Specialist"
+                },
+                {
+                    "testimonialWords":"I am free to learn a t my own pace, follow my own schedule and choose the subjecxt i want to learn from the syllabus. Great study portal for people like me.",
+                    "testimonialImg":"src/assets/img/testimonial-avata-02.jpg",
+                    "testimonialName":"Mina Hollace",
+                    "testimonialWork":"/Freelancer"
+                },
+                {
+                    "testimonialWords":"I am happy with their arragement of lessons and subject. They reflct a scientific investigation into effective methods to adopt for learners",
+                    "testimonialImg":"src/assets/img/testimonial-avata-01.jpg",
+                    "testimonialName":"Ludvic Dubble",
+                    "testimonialWork":"/Private Tutor"
+                },
+                {
+                    "testimonialWords":"I'm a very stric person so i require everything to be organized and neat. Then, I'll be able to meake things right and shine. MaxCoach guys just got me",
+                    "testimonialImg":"src/assets/img/testimonial-avata-04.jpg",
+                    "testimonialName":"Florence Themes",
+                    "testimonialWork":"/Multimedia Admin"
+                }
 
+            ],
+            currentSlider:0,
+            
+        }
+    },
+    computed:{
+        cards(){
+            return this.currentSlider;
+        },
+        currentIndex(){
+            return this.currentIndex
         }
     }
 }
@@ -243,7 +279,12 @@ export default{
     <!-- recensioni -->
     <div class="container-fluid mt reviews flex relative">
             <!-- rewis slider -->
-               <sliderApp />
+               <sliderApp v-for="(testimonial, index) in testimonials" :key="index"
+                :testimonialWords="testimonial.testimonialWords"
+                :testimonialImg="testimonial.testimonialImg"
+                :testimonialName="testimonial.testimonialName"
+                :testimonialWork="testimonial.testimonialWork"
+                :active="index == currentSlider"/>
     </div>
 
     <!-- blog udate -->
