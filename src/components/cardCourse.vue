@@ -35,6 +35,10 @@ export default{
     width: calc(100% / 3 - 2rem);
     margin: 2rem 1rem;
     text-align: start;
+    &:hover{
+        box-shadow: 2px 2px  10px  grey, -2px -2px  10px  grey;
+        transform: scale(110%);
+    }
     .text-card{
         
         .medium{

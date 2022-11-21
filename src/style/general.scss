@@ -95,7 +95,9 @@ button{
     a{
         color: white;
     }
-    
+    &:hover{
+        background-color: #6e00ff;
+    }
 }
 
 // active and hidden

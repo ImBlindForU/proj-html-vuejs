@@ -128,12 +128,7 @@ export default{
         }
     },
     computed:{
-        cards(){
-            return this.currentSlider;
-        },
-        currentIndex(){
-            return this.currentIndex
-        }
+      
     }
 }
 </script>
@@ -208,7 +203,7 @@ export default{
                                     :cent="card.cent"
                                     :title="card.title"
                                     :lessons="card.lessons"
-                                    :students="card.students" />
+                                    :students="card.students"/>
                                      
                     </div>
                     <button ><a href="">View all courses</a>  </button>
@@ -279,12 +274,12 @@ export default{
     <!-- recensioni -->
     <div class="container-fluid mt reviews flex relative">
             <!-- rewis slider -->
-               <sliderApp v-for="(testimonial, index) in testimonials" :key="index"
+               <sliderApp v-for="(testimonial) in testimonials" 
                 :testimonialWords="testimonial.testimonialWords"
                 :testimonialImg="testimonial.testimonialImg"
                 :testimonialName="testimonial.testimonialName"
                 :testimonialWork="testimonial.testimonialWork"
-                :active="index == currentSlider"/>
+                />
     </div>
 
     <!-- blog udate -->
