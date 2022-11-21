@@ -14,7 +14,7 @@ export default{
 </script>
 
 <template>
-    <span class="slider">slider</span>
+    <div class="slider"><i class="fa-solid fa-caret-up"></i> 1/4 <i class="fa-solid fa-caret-down"></i></div>
     <div class="text-slider flex ">
         <h4 class="text-colored">REAL STORIES</h4>
         <p>{{testimonialWords}}

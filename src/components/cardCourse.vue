@@ -22,8 +22,8 @@ export default{
             <h2 class="text-colored medium">{{price}}<span class="small">{{cent}}</span> </h2>
             <h3 >{{title}}</h3>
             <div class="lessons-student flex">
-                <p>{{lessons}} </p>
-                <p>{{students}} </p>
+                <p><i class="fa-regular fa-file-lines"></i> {{lessons}} </p>
+                <p><i class="fa-regular fa-user"></i> {{students}} </p>
             </div>
         </div>
     </div>

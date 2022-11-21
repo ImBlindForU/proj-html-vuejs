@@ -1,5 +1,5 @@
 @import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap');
 // reset
 
 *{
@@ -7,7 +7,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'Playfair Display', serif;
+}
 
 // commons
 // containers

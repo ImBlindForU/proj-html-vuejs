@@ -16,7 +16,7 @@ export default{
  <div class="news">
     <img :src="img" alt="">
     <div class="text-news">
-        <p>{{date}}</p>
+        <p><i class="fa-regular fa-calendar"></i>{{date}}</p>
         <h4>{{newsTitle}}</h4>
         <p>{{newsText}}</p>
     </div>

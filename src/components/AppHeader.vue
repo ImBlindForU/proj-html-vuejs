@@ -12,9 +12,7 @@ export default{
                     blog:"Blog",
                     shop:"Shop"
             },
-            icons:[
-                
-            ]
+           
             
   
         }  
@@ -32,12 +30,15 @@ export default{
             </div>
             <div class="list-general ">
                 <ul class="flex space-between">
-                    <li  v-for="(headerLink, index) in headerLinks" :key="index"><a href="">{{headerLink}}</a> </li>
+                    <li  v-for="(headerLink, index) in headerLinks" :key="index"><a href="">{{headerLink}}<i class="fa-solid fa-angle-down"></i></a> </li>
                 </ul>
             </div>
             <div class="icons">
                 <ul>
-                    <li></li>
+                    <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -61,7 +62,7 @@ export default{
                 <h2>I'M WINGMAN</h2>
                 <h1>Peace On Earth A Wonderful Wish But No Way</h1>
                 <p>Success isn't overnight. it's when everyday you get a little better than the day before. It all adds up</p>
-                <button><a href=""> Get Started For Free  arrowleft</a></button>
+                <button><a href=""> Get Started For Free  <i class="fa-solid fa-arrow-right"></i></a> </button>
             </div>
             <div class="jumbo-img">
                 <img src="../assets/img/home-movation-hero-image.png" alt="">

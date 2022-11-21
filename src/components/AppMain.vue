@@ -218,10 +218,10 @@ export default{
                     <h4>BOOK STORE ONLINE</h4>
                     <h2>Be Alpha With <span class="text-colored">Wingman's Book</span></h2>
                     <ul>
-                        <li>Help you understand yourself better</li>
-                        <li>Revealing mature tips</li>
-                        <li>Give the right advice</li>
-                        <li>Fascinating exeples of alpha man</li>
+                        <li><i class="fa-solid fa-check"></i>Help you understand yourself better</li>
+                        <li><i class="fa-solid fa-check"></i>Revealing mature tips</li>
+                        <li><i class="fa-solid fa-check"></i>Give the right advice</li>
+                        <li><i class="fa-solid fa-check"></i>Fascinating exeples of alpha man</li>
                     </ul>
                     <button><a href="">Get Free Ebook</a> </button>
                 </div>
@@ -231,6 +231,22 @@ export default{
                         <div class="text-book">
                             <h2>Alpha man by Maxcoach</h2>
                             <h2 class="text-colored"> $29<span class="small">.00</span> </h2>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-heart"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-signal"></i>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="book">
