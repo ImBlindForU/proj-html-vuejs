@@ -10,9 +10,14 @@ export default{
         newsApp,
         sliderApp,
     },
+
+
+          
     data(){
         return{
-
+            slides: 5,
+            active: 1,
+            currentSlider:0,
             cards:[
                 {
                
@@ -123,13 +128,28 @@ export default{
                 }
 
             ],
-            currentSlider:0,
-            
+           
         }
     },
-    computed:{
-      
-    }
+    methods:{
+        slidedown() {
+            if (this.currentSlider < this.testimonials.length - 1) {
+                this.currentSlider++;
+            } else {
+                this.currentSlider = 0;
+            }
+        },
+        slideUp() {
+
+                if ( this.currentSlider > 0) {
+                    this.currentSlider--;
+                } else {
+                        this.currentSlider = this.testimonials.length - 1;
+                        }
+                    },
+        
+            },
+    
 }
 </script>
 
@@ -290,7 +310,7 @@ export default{
     <!-- recensioni -->
     <div class="container-fluid mt reviews flex relative">
             <!-- rewis slider -->
-               <sliderApp v-for="(testimonial) in testimonials" 
+               <sliderApp v-for="(testimonial,index) in testimonials" @parentUp="slideUp" @parentDown="slidedown" :key="index"   
                 :testimonialWords="testimonial.testimonialWords"
                 :testimonialImg="testimonial.testimonialImg"
                 :testimonialName="testimonial.testimonialName"
@@ -304,11 +324,12 @@ export default{
             <h4>BLOG UPDATE</h4>
             <h2>Interesting <span class="text-colored">articles udated</span> daily</h2>
             <div class="newses-list flex wrap spac-between">
-                <newsApp v-for="(news, index) in newses" :key="index"
+                <newsApp  v-for="(news, index) in newses"  :key="index"
                 :img="news.img"
                 :date="news.date"
                 :newsText="news.newsText"
-                :newsTitle="news.newsTitle" />
+                :newsTitle="news.newsTitle"
+                 />
             </div>
         </div>
     </div>

@@ -8,13 +8,18 @@ export default{
         testimonialImg: String,
         testimonialName: String,
         testimonialWork: String,
-        active: String,
-    }
+    },
+    emits: ['parentUp', 'parentDown'],
+   
 }
 </script>
 
 <template>
-    <div class="slider"><i class="fa-solid fa-caret-up"></i> 1/4 <i class="fa-solid fa-caret-down"></i></div>
+    <div class="slider flex">
+        <span  @click="$emit('parentUp')"><i class="fa-solid fa-caret-up"></i> </span>
+        <span> /4</span>
+        <span @click="$emit('parentDown')"><i  class="fa-solid fa-caret-down"></i></span>
+    </div>
     <div class="text-slider flex ">
         <h4 class="text-colored">REAL STORIES</h4>
         <p>{{testimonialWords}}
@@ -34,12 +39,20 @@ export default{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: red;
-    padding: 1rem;
-    line-height: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    line-height: 25px;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
+    max-width: 150px;
+    max-height: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
 }
 .text-slider{
     background-image: url(../assets/img/background-pattern-wavify.png);
