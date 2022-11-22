@@ -39,7 +39,7 @@ export default{
             </div>
             <div class="icons ">
                 <ul class="flex">
-                    <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
@@ -68,7 +68,7 @@ export default{
 <style lang="scss" scoped>
 
 .header-heigt{
-    height: 100;
+    height: 100px;
 }
 .fix{
     position: fixed;

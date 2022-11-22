@@ -22,7 +22,9 @@ export default{
                 font-weight: 700;
                 &:hover{
                 color:#20AD96;
-            }
+                border-bottom: 1px solid #20AD96;
+
+            }   
                 i{
                    
                    }

@@ -2,7 +2,6 @@
 import cardCourse from "./cardCourse.vue"
 import newsApp from "./newsApp.vue"
 
-
 export default{
     name:"AppMain",
     components:{
@@ -162,8 +161,10 @@ export default{
                         this.slideNumber = this.testimonials.length ;
                         }
                     },
-        
+                    
+
             },
+
         
     
 }
@@ -173,21 +174,21 @@ export default{
     <div class="container-fluid">
         <!-- data  -->
         <section>
-            <div class="container mt flex space-between" >
+            <div class="container mt flex space-between level" >
                 <div class="data-container">  
-                        <h2 class="text-colored">1.926</h2>
+                        <h2 class="text-colored count" >1.926</h2>
                         <h3>FINISHED SESSIONS</h3>
                 </div>
                 <div class="data-container">  
-                        <h2 class="text-colored">100%</h2>
+                        <h2 class="text-colored" >100%</h2>
                         <h3>SATISFACTION RATE</h3>
                 </div>
                 <div class="data-container">  
-                        <h2 class="text-colored">3092+</h2>
+                        <h2 class="text-colored " >3092+</h2>
                         <h3>ENROLLED LEARNERS</h3>
                 </div>
                 <div class="data-container">  
-                        <h2 class="text-colored">200</h2>
+                        <h2 class="text-colored " >200</h2>
                         <h3>ONLINE INSTRUCTORS</h3>
                 </div>
             </div>
@@ -265,10 +266,10 @@ export default{
                     <div class="book relative">
                         <img src="../assets/img/product-book-11-400x400.jpg" alt="">
                         <div class="text-book">
-                            <h2>Alpha man by Maxcoach</h2>
-                            <h2 class="text-colored"> $29<span class="small">.00</span> </h2>
+                            <h4>Alpha man by Maxcoach</h4>
+                            <h4 class="text-colored"> $29<span class="small">.00</span> </h4>
                         </div>
-                        <div class="hover-list">
+                        <!-- <div class="hover-list">
                             <ul>
                                 <li>
                                    <span class="opacity">Click view</span> <i class=" opacity fa-solid fa-magnifying-glass"></i>
@@ -283,15 +284,15 @@ export default{
                                      <span class="opacity">Compare</span><i class="opacity fa-solid fa-signal"></i>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="book relative">
                         <img src="../assets/img/product-book-10-400x400.jpg" alt="">
                         <div class="text-book">
-                            <h2>Real man 4.0 by Maccoach</h2>
-                            <h2 class="text-colored">$39<span class="small">.00</span></h2>
+                            <h4>Real man 4.0 by Maccoach</h4>
+                            <h4 class="text-colored">$39<span class="small">.00</span></h4>
                         </div>
-                        <div class="hover-list">
+                        <!-- <div class="hover-list">
                             <ul>
                                 <li>
                                    <span class="opacity">Click view</span> <i class=" opacity fa-solid fa-magnifying-glass"></i>
@@ -306,7 +307,7 @@ export default{
                                      <span class="opacity">Compare</span><i class="opacity fa-solid fa-signal"></i>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -394,7 +395,6 @@ export default{
     h2{
        
         text-align: center;
-        font-size: 3rem;
         padding: 1rem;
 
     }
@@ -415,7 +415,6 @@ h3{
     width: 50%;
     h2{
         width: 60%;
-        font-size: 3rem;
     }
  }
  .text-about-me{
@@ -479,43 +478,42 @@ h3{
 .text-course{
     text-align: center;
     h2{
-        font-size: 3rem;
+
         padding-top: 1rem;
     }
 }
 
 // book store
-.hover-list{
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    ul{
-        li{
-           text-align: end;
-            i{
-                background-color: white;
-                border-radius: 50%;
+// .hover-list{
+//     position: absolute;
+//     top: 10%;
+//     right: 10%;
+//     ul{
+//         li{
+//            text-align: end;
+//             i{
+//                 background-color: white;
+//                 border-radius: 50%;
               
-                &:hover{
+//                 &:hover{
                     
-                    background-color: #20AD96;
-                }
-            }
-        }
-    }
-}
+//                     background-color: #20AD96;
+//                 }
+//             }
+//         }
+//     }
+// }
 .book-store-text{
     width: 40%;
     h2{
         width: 60%;
-        font-size: 3rem;
     }
     ul {
         li{
            
           
             i{
-               
+               padding-right: 0.5rem;
                 color: #20AD96;
                
             }
@@ -527,14 +525,17 @@ h3{
 }
 
 .book{
-    
+    overflow: hidden;
     text-align: center;
     img{
         padding-right: 2rem;
         padding-top: 2rem;
+        &:hover{
+            transform: scale(1.1);
+        }
        
     }
-    h2{
+    h4{
         padding-top: 1rem;
         
     }

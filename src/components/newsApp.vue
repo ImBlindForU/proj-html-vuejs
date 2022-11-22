@@ -28,7 +28,7 @@ export default{
 .news{
     width: calc(100% / 4 - 2rem );
     margin-right: 2rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     overflow: hidden;
     &:hover{
         img{

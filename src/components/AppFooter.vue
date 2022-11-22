@@ -83,7 +83,7 @@ data(){
     <!-- header bottom -->
 <div class="container-fluid black relative pt">
     <div class="right flex center">
-        <p>2020 Maccoach. All Rights Reserved</p>
+        <p>© 2020 Maccoach. All Rights Reserved</p>
         
     </div>
     <div class="arrow-up">
