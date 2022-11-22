@@ -47,6 +47,8 @@ export default{
         }
         h4{
             padding-top: 1rem;
+            font-weight: 900;
+            font-size: 1.5rem;
         }
 
     }

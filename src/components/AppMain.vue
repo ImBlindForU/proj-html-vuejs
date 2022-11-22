@@ -83,20 +83,20 @@ export default{
                 {
                     "img":"src/assets/img/motivation-blog-03-480x325.jpg",
                     "date":"May 13,2020",
-                    "newsTitle":"How to Stay True To Your Personal Brand",
-                    "newsText":"When it comes to your buismess or career,you want..."
+                    "newsTitle":"5 Vital Lessons in 5 years of Freelancing",
+                    "newsText":"Being self-employed and woriking from home,it's easy to get..."
                 },
                 {
                     "img":"src/assets/img/motivation-blog-02-480x325.jpg",
                     "date":"May 13,2020",
-                    "newsTitle":"How to Stay True To Your Personal Brand",
-                    "newsText":"When it comes to your buismess or career,you want..."
+                    "newsTitle":"11 Super Useful Tips for Small-Buisness Owners",
+                    "newsText":"Being a small-business owner poses a ton of challanges. We..."
                 },
                 {
                     "img":"src/assets/img/motivation-blog-01-480x325.jpg",
                     "date":"May 13,2020",
-                    "newsTitle":"How to Stay True To Your Personal Brand",
-                    "newsText":"When it comes to your buismess or career,you want..."
+                    "newsTitle":"How to Give Yourself Grace to Start Again",
+                    "newsText":"Forgive yourself for bad habits you may have started or..."
                 },
                 
             ],
