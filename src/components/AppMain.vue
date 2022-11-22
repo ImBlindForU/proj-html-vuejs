@@ -369,7 +369,7 @@ export default{
     <div class="container-fluid mt relative">
         <div class="container">
             <h4>BLOG UPDATE</h4>
-            <h2>Interesting <span class="text-colored">articles udated</span> daily</h2>
+            <h2>Interesting <span class="text-colored">articles updated</span> daily</h2>
             <div class="newses-list flex wrap spac-between">
                 <newsApp  v-for="(news, index) in newses"  :key="index"
                 :img="news.img"
