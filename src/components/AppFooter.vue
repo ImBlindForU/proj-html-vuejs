@@ -15,17 +15,20 @@ export default{
                     <li><a href="">382 NE 191st St #87394 Miami, FL 33179-3899</a> </li>
                     <li><a href="">+1[305] 547-9909(9am- 5pm EST, Monday - Friday)</a> </li>
                     <li><a href="">support@maxcoach.com</a> </li>
-                    <li class="flex">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+                    <li> 
+                        <ul class="flex footer-icons">
+                            <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+       
                     </li>
                 </ul>
             </div>
        
         <!-- explore -->
-        <div class="flex">
+       
             <div class="explore list">
                 <h4>Explore</h4>
                 <ul>
@@ -39,7 +42,7 @@ export default{
                 </ul>
             </div>
                 <div class="information list">
-                    <h4>Explore</h4>
+                    <h4>information</h4>
                     <ul>
                         <li><a href="">Membership</a> </li>
                         <li><a href="">Purchase guide</a> </li>
@@ -47,7 +50,7 @@ export default{
                         <li><a href="">Terms of service</a></li>
                     </ul>
                 </div>
-            </div>
+            
         </div>    
     </div>
     <!-- header bottom -->
@@ -57,7 +60,7 @@ export default{
         
     </div>
     <div class="arrow-up">
-       <a href="">arrow</a> 
+       <a href=""><i class="fa-solid fa-arrow-up"></i></a> 
     </div>
 </div>
    
@@ -71,8 +74,20 @@ export default{
 .address{
     width: 50%;
 }
+.footer-icons{
+    li{
+        a{
+            i{
+                padding: 1rem;
+                font-size: 2rem;
+            }
+        }
+    }
+}
 .explore{
-    width: 50%;
+    width: 20%;
+    height: 10%;
+    
 }
 .list{
     h4{
@@ -90,7 +105,7 @@ export default{
 .center{
     justify-content: center;
     align-items: center;
-    color: grey;
+    color: rgb(170, 170, 170);
 }
 .arrow-up{
     position: absolute;

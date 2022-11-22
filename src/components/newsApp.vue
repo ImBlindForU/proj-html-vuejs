@@ -29,7 +29,15 @@ export default{
     width: calc(100% / 4 - 2rem );
     margin-right: 2rem;
     margin-top: 1rem;
+    overflow: hidden;
+    &:hover{
+        img{
 
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
     .text-news{
         p{
             padding-top: 1rem;

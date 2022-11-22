@@ -561,18 +561,21 @@ h3{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid rgba(187, 181, 181, 0.726);
     line-height: 25px;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     max-width: 150px;
     max-height: 150px;
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    i{
+        color: #D5D5D5;
+        font-size: 1rem;
+    }
 
 }
 .text-slider{
