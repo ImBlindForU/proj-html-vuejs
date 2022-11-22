@@ -16,7 +16,8 @@ export default{
     data(){
         return{
 
-            currentSlider:1,
+            currentSlider:0,
+            slideNumber: 1,
             cards:[
                 {
                
@@ -134,6 +135,7 @@ export default{
                 }
 
             ],
+            
            
         }
     },
@@ -141,20 +143,28 @@ export default{
         slidedown() {
             if (this.currentSlider < this.testimonials.length - 1) {
                 this.currentSlider++;
+                this.slideNumber++;
+                
             } else {
                 this.currentSlider = 0;
+                this.slideNumber = 1;
+                
             }
         },
         slideUp() {
 
                 if ( this.currentSlider > 0) {
                     this.currentSlider--;
+                    this.slideNumber--;
+
                 } else {
                         this.currentSlider = this.testimonials.length - 1;
+                        this.slideNumber = this.testimonials.length ;
                         }
                     },
         
             },
+        
     
 }
 </script>
@@ -334,7 +344,7 @@ export default{
         <div class="slide flex">
                 <div class="slider flex">
                     <span  @click="slideUp"><i class="fa-solid fa-caret-up"></i> </span>
-                    <span> {{currentSlider}}/4</span>
+                    <span> {{slideNumber}}/4</span>
                     <span @click="slidedown"><i  class="fa-solid fa-caret-down"></i></span>
                 </div>
                 <div  class="text-slider flex ">
@@ -428,6 +438,10 @@ h3{
     background-image: url(../assets/img/home-movation-video-poster-670x450.jpg);
     background-position: center;
     background-size: cover;
+    overflow: hidden;
+    &:hover{
+        transform: scale(1.1);
+    }
     span{
         position: absolute;
         top: 50%;

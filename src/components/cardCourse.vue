@@ -35,9 +35,15 @@ export default{
     width: calc(100% / 3 - 2rem);
     margin: 2rem 1rem;
     text-align: start;
+    overflow: hidden;
     &:hover{
         box-shadow: 2px 2px  10px  grey, -2px -2px  10px  grey;
-        transform: scale(110%);
+        img{
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
     .text-card{
         

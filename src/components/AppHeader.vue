@@ -21,10 +21,9 @@ export default{
 </script>
 
 <template>
-
-    <div class="container-fluid backgroundimg">
-        <!-- general bar -->
-        <div class="container flex space-between header-heigt">
+    <div class="container-fluid fix">
+         <!-- general bar -->
+         <div class="container flex space-between header-heigt">
             <div class="logo">
                 <img src="../assets/img/dark-logo.png" alt="">
             </div>
@@ -42,22 +41,11 @@ export default{
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="container-fluid backgroundimg">
+       
         <!-- jumbotron -->
         <div class="container flex relative">
-            <!-- <div class="mini-menubar ">
-               <div class="tool">
-                    a
-               </div>
-               <div class="tool">
-                    b
-               </div>
-               <div class="tool"> 
-                    c
-               </div>
-               <div class="tool">
-                    d
-               </div>
-            </div> -->
             <div class="jumbo-text flex">
                 <h2>I'M WINGMAN</h2>
                 <h1>Peace On Earth A Wonderful Wish But No Way</h1>
@@ -75,10 +63,19 @@ export default{
 <style lang="scss" scoped>
 
 .header-heigt{
-    height: 100px;
+    height: 100;
+}
+.fix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999;
 }
 .backgroundimg{
     background-image: url(../assets/img/background-pattern-wavify.png);
+    padding-top: 150px;
+    
 }
 
 .list-general{
