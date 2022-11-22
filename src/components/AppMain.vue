@@ -495,8 +495,7 @@ h3{
             i{
                 background-color: white;
                 border-radius: 50%;
-                font-size: 1.5rem;
-                padding: 1rem;
+              
                 &:hover{
                     
                     background-color: #20AD96;
@@ -514,12 +513,11 @@ h3{
     ul {
         li{
            
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
+          
             i{
-                padding-right: 1rem;
+               
                 color: #20AD96;
-                font-size: 1rem;
+               
             }
         }
     }

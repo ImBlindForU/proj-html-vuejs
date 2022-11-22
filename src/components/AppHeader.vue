@@ -8,8 +8,8 @@ export default{
     data(){
         return{
             headerLinks:{
-                    "home": "Home",
-                    "pages":"Pages",
+                    home: "Home",
+                    pages:"Pages",
                     course:"Course",
                     features:"Features",
                     blog:"Blog",

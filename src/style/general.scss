@@ -47,7 +47,12 @@ body{
 
 ul{
     li{
+        padding-top: 1rem;
         list-style: none;
+        padding-right: 2rem;
+        i{
+            padding-left: 0.5rem;
+        }
     }
 }
 

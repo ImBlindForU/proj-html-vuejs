@@ -1,7 +1,40 @@
 <script >
+
+import linkFooter from './linkFooter.vue';
 export default{
-    name:"AppFooter"
+    name:"AppFooter",
+    components:{
+        linkFooter
+},
+data(){
+        return{
+            addresses:{
+                adre:"382 NE 191st St #87394 Miami, FL 33179-3899",
+                call:"+1[305] 547-9909(9am- 5pm EST, Monday - Friday)",
+                support:"support@maxcoach.com"
+            },
+            explores:{
+                        start:"Start here",
+                        Blog:"Blog",
+                        about:"About us",
+                        story:"Success story",
+                        course:"Course",
+                        Contact:"Contact us"
+
+            },
+            informations:{
+                Membership:"Membership",
+                Purchaseguide:"Purchase guide",
+                Privacypolicy:"Privacy policy",
+                Termsofservice:"Terms of service"
+            }
+           
+            
+  
+        }  
+    }
 }
+
 </script>
 
 <template>
@@ -9,12 +42,12 @@ export default{
     <div class="container-fluid black mt pt">
         <div class="container flex ">
             <!-- adress -->
+            
             <div class="address list">
                 <h4>Address</h4>
                 <ul>
-                    <li><a href="">382 NE 191st St #87394 Miami, FL 33179-3899</a> </li>
-                    <li><a href="">+1[305] 547-9909(9am- 5pm EST, Monday - Friday)</a> </li>
-                    <li><a href="">support@maxcoach.com</a> </li>
+                    <linkFooter v-for="(address, index) in addresses" :key="index"
+                    :linkfooter="address" />
                     <li> 
                         <ul class="flex footer-icons">
                             <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
@@ -32,22 +65,16 @@ export default{
             <div class="explore list">
                 <h4>Explore</h4>
                 <ul>
-                    <li><a href="">Start here</a> </li>
-                    <li><a href="">Blog</a> </li>
-                    <li><a href="">About us</a> </li>
-                    <li><a href="">Success story</a></li>
-                    <li><a href="">Course</a></li>
-                    <li><a href="">Contact us</a></li>
+                    <linkFooter v-for="(explore, index) in explores" :key="index"
+                    :linkfooter="explore" />
 
                 </ul>
             </div>
                 <div class="information list">
-                    <h4>information</h4>
+                    <h4>Information</h4>
                     <ul>
-                        <li><a href="">Membership</a> </li>
-                        <li><a href="">Purchase guide</a> </li>
-                        <li><a href="">Privacy policy</a> </li>
-                        <li><a href="">Terms of service</a></li>
+                        <linkFooter v-for="(information, index) in informations" :key="index"
+                        :linkfooter="information" />
                     </ul>
                 </div>
             
@@ -67,6 +94,18 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+.footer-icons{
+    li{
+        a{
+            i{
+                &:hover{
+                color: #20AD96;
+    }
+            }
+        }
+    }
+   
+}
 .black{
     background-color: #171621;
     min-height: 150px;
@@ -74,16 +113,7 @@ export default{
 .address{
     width: 50%;
 }
-.footer-icons{
-    li{
-        a{
-            i{
-                padding: 1rem;
-                font-size: 2rem;
-            }
-        }
-    }
-}
+
 .explore{
     width: 20%;
     height: 10%;

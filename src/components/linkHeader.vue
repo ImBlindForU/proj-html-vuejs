@@ -15,8 +15,7 @@ export default{
 
 <style lang="scss" >
  li{
-            padding: 1rem;
-            margin: 1rem;
+           
            
             a{
                 color: #46416A;
@@ -25,7 +24,7 @@ export default{
                 color:#20AD96;
             }
                 i{
-                    padding-left: 0.5rem;
+                   
                    }
             }   
             
