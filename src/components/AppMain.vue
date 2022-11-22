@@ -127,7 +127,7 @@ export default{
                 },
                 {
                     testimonialWords:"I'm a very stric person so i require everything to be organized and neat. Then, I'll be able to meake things right and shine. MaxCoach guys just got me",
-                    testimonialImg:"src/assets/img/testimonial-avata-04.jpg",
+                    testimonialImg:"src/assets/img/testimonial-avata-03.jpg",
                     testimonialName:"Florence Themes",
                     testimonialWork:"/Multimedia Admin",
                     testiImage:"src/assets/img/home-movation-testimonial-image.jpg"

@@ -1,12 +1,15 @@
 <script >
-
+import linkHeader from "./linkHeader.vue"
 export default{
     name:"AppHeader",
+    components:{
+        linkHeader,
+    },
     data(){
         return{
             headerLinks:{
-                    home: "Home",
-                    pages:"Pages",
+                    "home": "Home",
+                    "pages":"Pages",
                     course:"Course",
                     features:"Features",
                     blog:"Blog",
@@ -17,6 +20,7 @@ export default{
   
         }  
     }
+   
 }
 </script>
 
@@ -29,7 +33,8 @@ export default{
             </div>
             <div class="list-general ">
                 <ul class="flex space-between">
-                    <li  v-for="(headerLink, index) in headerLinks" :key="index"><a href="">{{headerLink}}<i class="fa-solid fa-angle-down"></i></a> </li>
+                    <linkHeader v-for="(headerlink, index) in headerLinks" :key="index"
+                    :link="headerlink" />
                 </ul>
             </div>
             <div class="icons ">
@@ -78,32 +83,12 @@ export default{
     
 }
 
-.list-general{
-    ul{
-        li{
-            padding: 1rem;
-            margin: 1rem;
-           
-            a{
-                color: #46416A;
-                font-weight: 700;
-                &:hover{
-                color:#20AD96;
-            }
-                i{
-                    padding-left: 0.5rem;
-                   }
-            }   
-            
-        }
-    }
-}
 
 .icons{
     ul{
         li{
             i{
-                padding: 1rem;
+               
                 &:hover{
                     color:#20AD96;
                     }
