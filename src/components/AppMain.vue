@@ -177,19 +177,19 @@ export default{
             <div class="container mt flex space-between level" >
                 <div class="data-container">  
                         <h2 class="text-colored count" >1.926</h2>
-                        <h3>FINISHED SESSIONS</h3>
+                        <h3 class="mini-text">FINISHED SESSIONS</h3>
                 </div>
                 <div class="data-container">  
                         <h2 class="text-colored" >100%</h2>
-                        <h3>SATISFACTION RATE</h3>
+                        <h3 class="mini-text">SATISFACTION RATE</h3>
                 </div>
                 <div class="data-container">  
                         <h2 class="text-colored " >3092+</h2>
-                        <h3>ENROLLED LEARNERS</h3>
+                        <h3 class="mini-text">ENROLLED LEARNERS</h3>
                 </div>
                 <div class="data-container">  
                         <h2 class="text-colored " >200</h2>
-                        <h3>ONLINE INSTRUCTORS</h3>
+                        <h3 class="mini-text">ONLINE INSTRUCTORS</h3>
                 </div>
             </div>
         </section>
@@ -199,7 +199,7 @@ export default{
         <section>
             
             <div class="container mt">
-                <h3>ABOUT ME</h3>
+                <h3 class="mini-text">ABOUT ME</h3>
                 <div class="flex">
                     <div class="title-about-me">
                         <h2>
@@ -218,7 +218,7 @@ export default{
                     <span><img src="../assets/img/icon-youtube-play.png" alt=""></span>
                 </div>
                 <div class="text-video">
-                    <h3>
+                    <h3 class="thini-text text-grey">
                         "Every morning you have two choices: continue to sleep with your dreams, or wake up and chase them"
                     </h3>
                     <img src="../assets/img/home-movation-shape-01.png" alt="">
@@ -231,7 +231,7 @@ export default{
         <section>
             <div class="container mt ">
                 <div class="text-course">
-                    <h4>BEGIN YOUR JOURNEY AT MAXCOACH</h4>
+                    <h4 class="text-grey">BEGIN YOUR JOURNEY AT MAXCOACH</h4>
                     <h2 class="text-purple">Latest <span class="text-colored">Online Courses</span></h2>
                     <div class="row-cards flex wrap">
                         <cardCourse v-for="(card, index) in cards" :key="index"
@@ -243,7 +243,7 @@ export default{
                                     :students="card.students"/>
                                      
                     </div>
-                    <button ><a href="">View all courses</a>  </button>
+                    <button ><a href="">View all courses</a>  <i class="fa-solid fa-arrow-right"></i> </button>
                 </div>
             </div>
         </section>
@@ -289,7 +289,7 @@ export default{
                     <div class="book relative">
                         <img src="../assets/img/product-book-10-400x400.jpg" alt="">
                         <div class="text-book">
-                            <h4>Real man 4.0 by Maccoach</h4>
+                            <h4>Real man 4.0 by Maxcoach</h4>
                             <h4 class="text-colored">$39<span class="small">.00</span></h4>
                         </div>
                         <!-- <div class="hover-list">
@@ -353,7 +353,7 @@ export default{
                     <p>{{testimonials[currentSlider].testimonialWords}}
                     </p>
                     <img :src="testimonials[currentSlider].testimonialImg" alt="">
-                    <h2>{{testimonials[currentSlider].testimonialName}}</h2>
+                    <h3 class="text-black">{{testimonials[currentSlider].testimonialName}}</h3>
                     <span>{{testimonials[currentSlider].testimonialWork}}</span>
                 </div>
                 <div class="img-slider">
@@ -368,7 +368,7 @@ export default{
     <!-- blog udate -->
     <div class="container-fluid mt relative">
         <div class="container">
-            <h4>BLOG UPDATE</h4>
+            <h4 class="text-grey">BLOG UPDATED</h4>
             <h2>Interesting <span class="text-colored">articles updated</span> daily</h2>
             <div class="newses-list flex wrap spac-between">
                 <newsApp  v-for="(news, index) in newses"  :key="index"
