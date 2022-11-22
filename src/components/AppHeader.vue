@@ -79,6 +79,7 @@ export default{
 }
 .backgroundimg{
     background-image: url(../assets/img/background-pattern-wavify.png);
+    background-color: #F2F2F9;
     padding-top: 150px;
     
 }

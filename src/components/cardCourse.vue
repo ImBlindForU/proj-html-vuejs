@@ -57,6 +57,7 @@ export default{
             color:black;
             font-size: 1.5rem;
             padding: 1rem;
+            color: #48436B;
 
         }
         .lessons-student{

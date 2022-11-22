@@ -67,6 +67,7 @@ a{
 h2{
     font-size: 3rem;
     padding: 1rem 0;
+    
 }
 
 h3{
@@ -95,8 +96,15 @@ img{
 .text-colored{
     color: #20AD96;
 }
-
-
+.text-purple{
+    color:#48436B;
+}
+.text-grey{
+    color: grey;
+}
+.text-darkgrey{
+    color: #6F6F6F;
+}
 // commo
 .small{
     font-size: 1rem;

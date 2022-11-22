@@ -222,8 +222,8 @@ export default{
                         "Every morning you have two choices: continue to sleep with your dreams, or wake up and chase them"
                     </h3>
                     <img src="../assets/img/home-movation-shape-01.png" alt="">
-                    <h2>Kaixa Stark</h2>
-                    <h4>WINGMAN</h4>
+                    <h2 class="text-purple">Kaixa Stark</h2>
+                    <h4 class="text-purple">WINGMAN</h4>
                 </div>
             </div>
         </section>
@@ -232,7 +232,7 @@ export default{
             <div class="container mt ">
                 <div class="text-course">
                     <h4>BEGIN YOUR JOURNEY AT MAXCOACH</h4>
-                    <h2>Latest <span class="text-colored">Online Courses</span></h2>
+                    <h2 class="text-purple">Latest <span class="text-colored">Online Courses</span></h2>
                     <div class="row-cards flex wrap">
                         <cardCourse v-for="(card, index) in cards" :key="index"
                                     :image="card.image"
@@ -252,9 +252,9 @@ export default{
         <section>
             <div class="container mt flex">
                 <div class="book-store-text">
-                    <h4>BOOK STORE ONLINE</h4>
-                    <h2>Be Alpha With <span class="text-colored">Wingman's Book</span></h2>
-                    <ul>
+                    <h4 class="text-darkgrey">BOOK STORE ONLINE</h4>
+                    <h2 class="text-purple">Be Alpha With <span class="text-colored">Wingman's Book</span></h2>
+                    <ul class="text-grey">
                         <li><i class="fa-solid fa-check"></i>Help you understand yourself better</li>
                         <li><i class="fa-solid fa-check"></i>Revealing mature tips</li>
                         <li><i class="fa-solid fa-check"></i>Give the right advice</li>
@@ -463,13 +463,10 @@ h3{
     }
     h2{
         padding-top: 1rem;
-        color: rgb(87, 0, 87);
+      
     }
     h4{
-        padding-top: 1rem;
-        color: rgb(87, 0, 87);
-
-
+        padding-top: 1rem;  
     }
 }
 
@@ -579,6 +576,7 @@ h3{
 }
 .text-slider{
     background-image: url(../assets/img/background-pattern-wavify.png);
+    background-color: #F2F2F9;
     width: 50%;
     text-align: center;
     flex-direction: column;
