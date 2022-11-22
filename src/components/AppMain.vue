@@ -1,14 +1,14 @@
 <script >
 import cardCourse from "./cardCourse.vue"
 import newsApp from "./newsApp.vue"
-import sliderApp from "./sliderApp.vue"
+
 
 export default{
     name:"AppMain",
     components:{
         cardCourse,
         newsApp,
-        sliderApp,
+        
     },
 
 
@@ -16,7 +16,7 @@ export default{
     data(){
         return{
 
-            currentSlider:0,
+            currentSlider:1,
             cards:[
                 {
                
@@ -102,34 +102,34 @@ export default{
             ],
             testimonials:[
                 {
-                    "testimonialWords":"I need to get certification for English proficency and MaxCoach is my best pchoice.Their tutors are smart and professional when dealing with students",
-                    "testimonialImg":"src/assets/img/testimonial-avata-04.jpg",
-                    "testimonialName":"Madley Pondor",
-                    "testimonialWork":"/IT Specialist",
-                    "testiImage":"src/assets/img/home-movation-testimonial-image.jpg"
+                    testimonialWords:"I need to get certification for English proficency and MaxCoach is my best pchoice.Their tutors are smart and professional when dealing with students",
+                    testimonialImg:"src/assets/img/testimonial-avata-04.jpg",
+                    testimonialName:"Madley Pondor",
+                    testimonialWork:"/IT Specialist",
+                    testiImage:"src/assets/img/home-movation-testimonial-image.jpg"
                 },
                 {
-                    "testimonialWords":"I am free to learn a t my own pace, follow my own schedule and choose the subjecxt i want to learn from the syllabus. Great study portal for people like me.",
-                    "testimonialImg":"src/assets/img/testimonial-avata-02.jpg",
-                    "testimonialName":"Mina Hollace",
-                    "testimonialWork":"/Freelancer",
-                    "testiImage":"src/assets/img/home-movation-testimonial-image.jpg"
+                    testimonialWords:"I am free to learn a t my own pace, follow my own schedule and choose the subjecxt i want to learn from the syllabus. Great study portal for people like me.",
+                    testimonialImg:"src/assets/img/testimonial-avata-02.jpg",
+                    testimonialName:"Mina Hollace",
+                    testimonialWork:"/Freelancer",
+                    testiImage:"src/assets/img/home-movation-testimonial-image.jpg"
 
                 },
                 {
-                    "testimonialWords":"I am happy with their arragement of lessons and subject. They reflct a scientific investigation into effective methods to adopt for learners",
-                    "testimonialImg":"src/assets/img/testimonial-avata-01.jpg",
-                    "testimonialName":"Ludvic Dubble",
-                    "testimonialWork":"/Private Tutor",
-                    "testiImage":"src/assets/img/home-movation-testimonial-image.jpg"
+                    testimonialWords:"I am happy with their arragement of lessons and subject. They reflct a scientific investigation into effective methods to adopt for learners",
+                    testimonialImg:"src/assets/img/testimonial-avata-01.jpg",
+                    testimonialName:"Ludvic Dubble",
+                    testimonialWork:"/Private Tutor",
+                    testiImage:"src/assets/img/home-movation-testimonial-image.jpg"
 
                 },
                 {
-                    "testimonialWords":"I'm a very stric person so i require everything to be organized and neat. Then, I'll be able to meake things right and shine. MaxCoach guys just got me",
-                    "testimonialImg":"src/assets/img/testimonial-avata-04.jpg",
-                    "testimonialName":"Florence Themes",
-                    "testimonialWork":"/Multimedia Admin",
-                    "testiImage":"src/assets/img/home-movation-testimonial-image.jpg"
+                    testimonialWords:"I'm a very stric person so i require everything to be organized and neat. Then, I'll be able to meake things right and shine. MaxCoach guys just got me",
+                    testimonialImg:"src/assets/img/testimonial-avata-04.jpg",
+                    testimonialName:"Florence Themes",
+                    testimonialWork:"/Multimedia Admin",
+                    testiImage:"src/assets/img/home-movation-testimonial-image.jpg"
 
                 }
 
@@ -331,14 +331,27 @@ export default{
 
     <!-- recensioni -->
     <div class="container-fluid mt reviews flex relative wrap">
-            <!-- rewis slider -->
-               <sliderApp v-for="(testimonial,index) in testimonials" @parentUp="slideUp" @parentDown="slidedown" :key="index"   
-                :testimonialWords="testimonial.testimonialWords"
-                :testimonialImg="testimonial.testimonialImg"
-                :testimonialName="testimonial.testimonialName"
-                :testimonialWork="testimonial.testimonialWork"
-                :testiImage="testiImage"
-                />
+        <div class="slide flex">
+                <div class="slider flex">
+                    <span  @click="slideUp"><i class="fa-solid fa-caret-up"></i> </span>
+                    <span> {{currentSlider}}/4</span>
+                    <span @click="slidedown"><i  class="fa-solid fa-caret-down"></i></span>
+                </div>
+                <div  class="text-slider flex ">
+                    <h4 class="text-colored">REAL STORIES</h4>
+                    <p>{{testimonials[currentSlider].testimonialWords}}
+                    </p>
+                    <img :src="testimonials[currentSlider].testimonialImg" alt="">
+                    <h2>{{testimonials[currentSlider].testimonialName}}</h2>
+                    <span>{{testimonials[currentSlider].testimonialWork}}</span>
+                </div>
+                <div class="img-slider">
+                    <img src="../assets/img/home-movation-testimonial-image.jpg" alt="">
+                </div>
+        </div>
+
+
+
     </div>
 
     <!-- blog udate -->
@@ -522,6 +535,68 @@ h3{
     color: #20AD96;
     filter: grayscale(90%);
     opacity: 0.3;
+}
+
+// slider
+.slide{
+    width: 100%;
+}
+.slider{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+    line-height: 25px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    max-width: 150px;
+    max-height: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.text-slider{
+    background-image: url(../assets/img/background-pattern-wavify.png);
+    width: 50%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    p{
+        width: 50%;
+        font-size: 2rem;
+        padding: 1rem;
+
+    }
+    img{
+        width: 10%;
+        border-radius: 50%;
+        padding: 1rem;
+
+    }
+
+    span{
+        color: grey;
+    }
+}
+
+.img-slider{
+    width: 50%;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 // blog
