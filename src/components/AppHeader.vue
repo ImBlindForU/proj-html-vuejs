@@ -52,7 +52,7 @@ export default{
         <!-- jumbotron -->
         <div class="container flex relative">
             <div class="jumbo-text flex">
-                <h2>I'M WINGMAN</h2>
+                <h4>I'M WINGMAN</h4>
                 <h1>Peace On Earth A Wonderful Wish But No Way</h1>
                 <p>Success isn't overnight. it's when everyday you get a little better than the day before. It all adds up</p>
                 <button><a href=""> Get Started For Free  <i class="fa-solid fa-arrow-right"></i></a> </button>
